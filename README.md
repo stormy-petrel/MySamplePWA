@@ -22,7 +22,9 @@ caches.open('cache-name').then(cache => {
 ```
 3. Go to the Web Inspector -> Network tab. After refreshing the page, Transfer Size column shows whether a file is loaded by Service Worker or the cache.   
 
-4. Test with cache cleared then run the cache logging code in 2. again
+4. Test Offline:  Ctrl+C to kill the web server.  Fill the form again see the calculated value.  However, refresh the page will show connection issue.  Need to add a graceful warning message - Cannot connect server, thus don't clean the cache. 
+
+5. Test with cache cleared then run the cache logging code in 2. again
 ```javascript
 caches.open('cache-name')
   .then(cache => {
@@ -33,6 +35,8 @@ caches.open('cache-name')
         })
     })
   })
+
+
 ```
    
 See details in [Debugging Service Workers in Safari](https://youtu.be/87RU7v6Y-bk?si=qwcP2ZUP98VuQEx_)

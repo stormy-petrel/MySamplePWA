@@ -3,6 +3,7 @@ const CACHE_NAME = `temperature-converter-v1`;
 // Use the install event to pre-cache all initial resources.
 self.addEventListener('install', event => {
   console.log(`service worker installing...`);
+  
   event.waitUntil((async () => {
     const cache = await caches.open(CACHE_NAME);
     cache.addAll([
@@ -15,6 +16,7 @@ self.addEventListener('install', event => {
 
 self.addEventListener('fetch', event => {
   console.log(`service worker fetching...`);
+
   event.respondWith((async () => {
     const cache = await caches.open(CACHE_NAME);
 
