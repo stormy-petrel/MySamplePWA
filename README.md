@@ -43,3 +43,6 @@ See details in [Debugging Service Workers in Safari](https://youtu.be/87RU7v6Y-b
 
 ## Microsoft Edge 
 See [Tutorial: Get started with Progressive Web Apps](https://learn.microsoft.com/en-us/microsoft-edge/progressive-web-apps-chromium/how-to/)
+
+## Google Chrome
+Install LightHouse extension. Then perform the web load analysis in Inspection windown (Cmd + Option + I)
